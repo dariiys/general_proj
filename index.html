@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html
+  lang="uk"
+  data-theme="light"
+  data-font-size="normal"
+  data-contrast="normal"
+  data-saturation="normal"
+  data-links="normal"
+  data-monochrome="off"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Інноваційна панель доступності з підтримкою веб-доступності. Спеціальні налаштування для комфортного перегляду всіма користувачами."
+    />
+    <title>K-Beauty | Корейська косметика</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">K-Beauty</a>
+      <nav>
+        <ul>
+          <li><a href="#" aria-label="Головна сторінка">Головна</a></li>
+          <li><a href="#" aria-label="Продукція">Продукція</a></li>
+          <li><a href="#" aria-label="Про нас">Про нас</a></li>
+          <li class="search-container">
+            <svg
+              class="search-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Пошук..."
+              aria-label="Пошук товарів"
+            />
+          </li>
+          <li class="theme-toggle-container">
+            <button class="theme-toggle" aria-label="Змінити тему">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <path
+                  d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                ></path>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <video class="video-background" autoplay muted loop aria-hidden="true">
+          <source
+            src="img/AdobeStock_1193056232_Video_HD_Preview.mov"
+            type="video/mp4"
+            alt="зображення крему для обличчя"
+          />
+          Ваш браузер не підтримує відео тег.
+        </video>
+        <div class="hero-content">
+          <h1>Корейська косметика</h1>
+          <p>
+            Відкрийте для себе секрети корейського догляду за шкірою.
+            Інноваційні формули, натуральні інгредієнти та неперевершений
+            результат.
+          </p>
+          <a href="#" class="btn" aria-label="Купити зараз">Купити</a>
+        </div>
+      </section>
+
+      <section class="new-products">
+        <div class="section-header">
+          <h2 class="section-title">Новинки косметики</h2>
+          <a href="#" aria-label="Головна сторінка" class="view-all-link">
+            переглянути все
+            <span class="arrow-icon">→</span>
+          </a>
+        </div>
+
+        <div class="slider-container">
+          <button class="slider-btn prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="products-slider" id="productsSlider">
+            <!-- Картки продуктів (7 штук) -->
+            <div class="product-card active">
+              <div class="product-image-container">
+                <img
+                  src="img/c-tetra_luxe_30_ml-removebg-preview.png"
+                  class="product-image"
+                  alt="зображення крему для обличчя"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-brand">Brand 1</div>
+                <div class="product-name">Крем для обличчя</div>
+                <div class="product-price">379₴</div>
+              </div>
+            </div>
+
+            <div class="product-card active">
+              <div class="product-image-container">
+                <img
+                  src="img/CR008_1-removebg-preview.png"
+                  class="product-image"
+                  alt="зображення крему для обличчя"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-brand">Brand 2</div>
+                <div class="product-name">Тонік для очищення</div>
+                <div class="product-price">938₴</div>
+              </div>
+            </div>
+
+            <div class="product-card active">
+              <div class="product-image-container">
+                <img
+                  src="img/DR.ALTHEA345ReliefCream-removebg-preview.png"
+                  class="product-image"
+                  alt="зображення крему для обличчя"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-brand">Brand 3</div>
+                <div class="product-name">Серум з вітаміном С</div>
+                <div class="product-price">679₴</div>
+              </div>
+            </div>
+
+            <div class="product-card active">
+              <div class="product-image-container">
+                <img
+                  src="img/images-removebg-preview.png"
+                  class="product-image"
+                  alt="зображення крему для обличчя"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-brand">Brand 4</div>
+                <div class="product-name">Маска для обличчя</div>
+                <div class="product-price">1580₴</div>
+              </div>
+            </div>
+
+            <div class="product-card active">
+              <div class="product-image-container">
+                <img
+                  src="img/1090973-removebg-preview.png"
+                  class="product-image"
+                  alt="зображення крему для обличчя"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-brand">Brand 5</div>
+                <div class="product-name">Крем для очей</div>
+                <div class="product-price">1800₴</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="img/round-lab-1025-dokdo-toner-36754884919572-removebg-preview.png"
+                  class="product-image"
+                  alt="зображення крему для обличчя"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-brand">Brand 6</div>
+                <div class="product-name">Очищувальна піна</div>
+                <div class="product-price">1778₴</div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="img/Deep-Sea-Cream-1_1024x1024-removebg-preview.png"
+                  class="product-image"
+                  alt="зображення крему для обличчя"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-brand">Brand 7</div>
+                <div class="product-name">Сонцезахисний крем</div>
+                <div class="product-price">1900₴</div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="blog-section">
+        <div class="section-header">
+          <h2 class="section-title">Блог</h2>
+          <a href="#" aria-label="Головна сторінка" class="view-all-link">
+            Більше статей блогу
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div class="articles-container">
+          <!-- Стаття 1 -->
+          <article class="article-card">
+            <img
+              src="img/art1.jpg "
+              alt="Догляд за шкірою"
+              class="article-image"
+            />
+            <div class="article-content">
+              <div class="article-date">28 червня 2025 року</div>
+              <h3 class="article-title">
+                Догляд за шкірою з уповільненим старінням: як зберегти шкіру
+                пружною та здоровою
+              </h3>
+            </div>
+          </article>
+
+          <!-- Стаття 2 -->
+          <article class="article-card">
+            <img
+              src="img/art2.jpg"
+              alt="Основи догляду"
+              class="article-image"
+            />
+            <div class="article-content">
+              <div class="article-date">12 червня 2025 року</div>
+              <h3 class="article-title">
+                Основи догляду за шкірою: відлущування
+              </h3>
+            </div>
+          </article>
+
+          <!-- Стаття 3 -->
+          <article class="article-card">
+            <img
+              src="img/art3.jpg"
+              alt="Корейський догляд"
+              class="article-image"
+            />
+            <div class="article-content">
+              <div class="article-date">7 червня 2025 року</div>
+              <h3 class="article-title">
+                Корейський 10-кроковий догляд за шкірою
+              </h3>
+            </div>
+          </article>
+
+          <!-- Стаття 4 -->
+          <article class="article-card">
+            <img src="img/art4.jpg" alt="Грибкове акне" class="article-image" />
+            <div class="article-content">
+              <div class="article-date">6 червня 2025 року</div>
+              <h3 class="article-title">Що таке грибкове акне?</h3>
+            </div>
+          </article>
+
+          <!-- Стаття 5 -->
+          <article class="article-card">
+            <img src="img/art6.jpg" alt="Грибкове акне" class="article-image" />
+            <div class="article-content">
+              <div class="article-date">9 червня 2025 року</div>
+              <h3 class="article-title">
+                Догляд за обличчям та шкірою для чоловіків!
+              </h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="blog-section">
+        <div class="section-header">
+          <h2 class="section-title">Бестселери літа</h2>
+        </div>
+
+        <div class="bestsellers-row">
+          <!-- Перший бестселер -->
+          <div class="bestseller-item">
+            <img
+              src="img/best1.jpg "
+              alt="Літній бестселер 1"
+              class="bestseller-img"
+            />
+          </div>
+
+          <!-- Другий бестселер -->
+          <div class="bestseller-item">
+            <img
+              src="img/best2.jpg"
+              alt="Літній бестселер 2"
+              class="bestseller-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-section">
+        <div class="subscription-box">
+          <div class="text-content">
+            <div class="title">Отримай знижку 5%</div>
+            <div class="subtitle">
+              Підпишись на розсилку для отримання ексклюзивних пропозицій
+            </div>
+          </div>
+
+          <form class="subscribe-form">
+            <input
+              type="email"
+              class="email-input"
+              placeholder="Твій email"
+              required
+            />
+            <button type="submit" class="subscribe-btn">Підписатися</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="beauty-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Магазин</h3>
+          <ul class="footer-links">
+            <li><a href="#" aria-label="Головна сторінка">Про нас</a></li>
+            <li><a href="#" aria-label="Головна сторінка">Каталог</a></li>
+            <li><a href="#" aria-label="Головна сторінка">Новинки</a></li>
+            <li><a href="#" aria-label="Головна сторінка">Бестселери</a></li>
+            <li><a href="#" aria-label="Головна сторінка">Акції</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Допомога</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#" aria-label="Головна сторінка">Доставка та оплата</a>
+            </li>
+            <li><a href="#" aria-label="Головна сторінка">Повернення</a></li>
+            <li>
+              <a href="#" aria-label="Головна сторінка">Часті запитання</a>
+            </li>
+            <li><a href="#" aria-label="Головна сторінка">Консультація</a></li>
+            <li>
+              <a href="#" aria-label="Головна сторінка">Блог про догляд</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Контакти</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="tel:+380991234567" aria-label="Головна сторінка"
+                >+38 (099) 123-45-67</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@beautyshop.com" aria-label="Головна сторінка"
+                >info@beautyshop.com</a
+              >
+            </li>
+            <li>м. Київ, вул. Красива, 10</li>
+          </ul>
+          <div class="social-links">
+            <a href="#" aria-label="Read more about Seminole's new baby mayor"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Read more about Seminole's new baby mayor"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Read more about Seminole's new baby mayor"
+              ><i class="fab fa-telegram"></i
+            ></a>
+            <a href="#" F aria-label="Read more about Seminole's new baby mayor"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-column newsletter">
+          <h3>Розсилка</h3>
+          <p>Підпишіться на новини та отримуйте ексклюзивні пропозиції</p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              class="newsletter-input"
+              placeholder="Ваш email"
+              required
+            />
+            <button type="submit" class="newsletter-btn">OK</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2023 Beauty Shop. Всі права захищені</div>
+        <div class="payment-methods">
+          <img
+            src="https://via.placeholder.com/40x24/FF9BB3/FFFFFF?text=visa"
+            alt="Visa"
+          />
+          <img
+            src="https://via.placeholder.com/40x24/FF9BB3/FFFFFF?text=MC"
+            alt="Mastercard"
+          />
+          <img
+            src="https://via.placeholder.com/40x24/FF9BB3/FFFFFF?text=PP"
+            alt="PayPal"
+          />
+        </div>
+        <div>
+          <a
+            href="#"
+            style="color: var(--light-text)"
+            aria-label="Головна сторінка"
+            >Політика конфіденційності</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Додайте цей код перед закриваючим тегом </body> -->
+    <button
+      class="accessibility-btn"
+      id="accessibilityToggle"
+      aria-label="Налаштування доступності"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="12" cy="12" r="3"></circle>
+        <path
+          d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- Оновлена панель доступності -->
+    <div class="accessibility-panel" id="accessibilityPanel">
+      <h3>Налаштування доступності</h3>
+
+      <div class="form-group">
+        <label for="fontSize">Розмір шрифту:</label>
+        <select id="fontSize">
+          <option value="normal">Звичайний</option>
+          <option value="large">Великий</option>
+          <option value="xlarge">Дуже великий</option>
+          <option value="xxlarge">Найбільший</option>
+        </select>
+      </div>
+
+      <div class="toggle-row">
+        <label for="highlightLinks">Підсвічувати посилання:</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="highlightLinks" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-row">
+        <label for="monochrome">Монохромний режим:</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="monochrome" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-row">
+        <label for="stopAnimations">Зупинити анімації:</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="stopAnimations" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="accessibility-option">
+        <label for="ttsToggle">Читання вголос</label>
+        <input type="checkbox" id="ttsToggle" />
+        <button
+          id="readPage"
+          aria-label="Read more about Seminole's new baby mayor"
+        >
+          Прочитати сторінку
+        </button>
+        <button
+          id="stopReading"
+          aria-label="Read more about Seminole's new baby mayor"
+        >
+          Зупинити
+        </button>
+      </div>
+
+      <div class="accessibility-option">
+        <button id="toggleDyslexic" class="dyslexic-btn">
+          <span class="dyslexic-icon">D</span> OpenDyslexic
+        </button>
+      </div>
+
+      <div class="form-actions">
+        <button
+          class="btn"
+          id="resetAccessibility"
+          aria-label="Read more about Seminole's new baby mayor"
+        >
+          Скинути
+        </button>
+        <button
+          class="btn"
+          id="closeAccessibility"
+          aria-label="Read more about Seminole's new baby mayor"
+        >
+          Закрити
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
